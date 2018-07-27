@@ -1,0 +1,167 @@
+// Margenes ----------------------------------------------
+for num in 1..20
+  .mb-{num * 5}
+    margin-bottom: num * 5px!important
+    &-md
+    	+from-width(5)
+    		margin-bottom: num * 5px!important
+  .mt-{num * 5}
+    margin-top: num * 5px!important
+    &-md
+    	+from-width(5)
+    		margin-top: num * 5px!important
+for num in 1..20
+  .ml-{num * 5}
+    margin-bottom: num * 5px
+  .mr-{num * 5}
+    margin-top: num * 5px
+	
+.mtb0
+	margin-top: 0px!important
+	margin-bottom: 0px!important
+.margin-auto
+	margin 0  auto !important
+.no-margin
+	margin:0!important
+	+between(0,3,anti-overlap:-1px)
+		&-xs
+			margin:0!important
+	+from-width(4, anti-overlap:false)
+		&-sm
+			margin: 0!important
+.no-border
+	border:0px!important
+.no-resize
+	resize: none
+//paddigs ----------------------------------------------
+for num in 1..10
+  .pb-{num * 10}
+    padding-bottom: num * 10px
+  .pt-{num * 10}
+    padding-top: num * 10px
+  .pt-{num * 10}-im
+    padding-top: num * 10px !important
+  .p-{num * 10}
+    padding: num * 10px
+//borders ----------------------------------------------
+for num in 1..3
+	.b{num}-black
+		border num * 1px solid #000
+		// btn(#000, #FFF, false, false, false)
+		&-sm
+			border num * 1px solid #000
+			+from-width(5)
+				border none
+// .divisor
+// 	width 100%
+// 	height 20px
+// 	+from-width(5)
+// 		height 65px
+// 	&-lg
+// 		+from-width(5)
+// 			width 100%
+// 			height 65px
+// 	&-border
+// 		width 100%
+// 		height 65px
+// 		border-top: 1px solid rgba(#000,.2);
+// 		h2
+// 			line-height 65px
+// 		&.h10
+// 			height 10px !important
+			
+//displays -----------------------------------------------
+.clearfix
+	&:after,&:before
+		content ''
+		display block
+		clear both
+
+.center-block
+	display:block
+	margin:0 auto
+
+.visible
+	&-xs,&-sm,&-md,&-lg
+		display:none!important
+	&-inline-xs,&-inline-sm,&-inline-md,&-inline-lg
+		display:none!important
+	&-flex-xs,&-flex-sm,&-flex-md,&-flex-lg
+		display:none!important
+	//@media only screen and (max-width: 767px)
+	+between(0,3,anti-overlap:-1px)
+		&-xs
+			display:block!important
+		&-inline-xs
+			display:inline-block!important
+		&-flex-xs
+			display:flex!important
+	//Tablets @media only screen and (min-width: 768px) and (max-width: 1023px)
+	+from-width(4, anti-overlap:false)
+		&-sm
+			display:block!important
+		&-inline-sm
+			display:inline-block!important
+		&-flex-sm
+			display:flex!important
+	//Small Desktops @media only screen and (min-width: 1024px)
+	+from-width(5)
+		&-md
+			display:block!important
+		&-inline-md
+			display:inline-block!important
+		&-flex-md
+			display:flex!important
+	//Desktops @media only screen and (min-width: 1201px)
+	+from-width(6)
+		&-lg
+			display:block!important
+		&-inline-lg
+			display:inline-block!important
+		&-flex-lg
+			display:flex!important
+.hidden
+	display none!important
+	+between(0,3,anti-overlap:-1px)
+		&-xs
+			display:none!important
+	//Tablets ()
+	+from-width(4, anti-overlap:false)
+		&-sm
+			display:none!important
+	//small Desktops
+	+from-width(5)
+		&-md
+			display:none!important
+	// Desktops
+	+from-width(6)
+		&-lg
+			display:none!important
+//positions ----------------------------------------------
+.rel
+	position relative
+.bottom
+  position absolute
+  bottom 0
+.top
+	top 0px!important
+.pull-right
+	float: right!important
+.pull-left
+	float: left!important
+// Alineaciones flex 
+.self-bottom
+	align-self flex-end
+.self-top
+	align-self flex-start
+.w
+	&-auto
+		width auto
+	&-max-cont
+		width max-content
+.txt-justify
+	text-align: justify
+.raleway-font
+	font-family: $raleway
+.inline-block
+	display inline-block

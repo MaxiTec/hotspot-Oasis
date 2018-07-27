@@ -1,0 +1,38 @@
+{% include 'includes/head.html' %}
+{%set headerConfig = { 
+  logo:'goc.svg'
+  } 
+%}
+<main class="main-section goc">
+    {% include 'includes/header.html' %}
+  <div class="main-section__wrap">
+      <section class="main-section__inner">
+        <form action="" class="main-section__inner--form">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Acces Code" required>
+              </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Email Address" required>
+                </div>
+            </div>
+            <div class="col-xs-12 center-xs">
+                <div class="checkbox-custom mt-10 mb-20">
+                  <input type="checkbox" id="accept">
+                  <label for="accept">Acepto <strong><a href="#">términos y condiciones</a></strong></label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block mb-40">
+                </div>
+            </div>
+            </div>
+          </div>
+        </form>
+      </section>
+  {% include 'includes/footer.html' %} 
+  </div>
+</main>
+{% include 'includes/end.html' %} 

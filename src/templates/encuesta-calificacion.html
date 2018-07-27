@@ -1,0 +1,55 @@
+{% include 'includes/head.html' %}
+{%set headerConfig = { 
+  logo:'logo-oasis.svg'
+  } 
+%}
+<main class="main__test">
+  <div class="main__test__header">
+    <img src="./img/logos/logo-oasis.svg" alt="">
+    <!-- <h1 class="title mb-60">Overall, how has your time with us so far?</h1> -->
+  </div>
+  <div class="main__test__overlay">
+      <h1 class="title white mb-60">Overall, how has your time <br> with us so far?</h1>
+      <form action="#">
+          <!-- <h1 class="title mb-60">Overall, how has your time with us so far?</h1> -->
+        <div class="radio-custom">
+            <input checked="checked" id="angry-1" type="radio" name="satisfaction" value="visa" />
+            <label class="radio-icon" for="angry-1">
+              <div class="label__wrap">
+                <img src="./img/emojis/angry-1.png" alt="">
+              </div>
+              <span>Terrible</span>
+            </label>
+            <input id="angry-2" type="radio" name="satisfaction" value="mastercard" />
+            <label class="radio-icon" for="angry-2">
+                <div class="label__wrap">
+                  <img src="./img/emojis/angry-2.png" alt="">
+                </div>
+              <span>Bad</span>
+            </label>
+            <input id="smiling" type="radio" name="satisfaction" value="mastercard" />
+            <label class="radio-icon" for="smiling">
+                <div class="label__wrap">
+                  <img src="./img/emojis/smiling.png" alt="">
+                </div>
+              <span>Ok</span>
+            </label>
+            <input id="happy" type="radio" name="satisfaction" value="mastercard" />
+            <label class="radio-icon" for="happy">
+                <div class="label__wrap">
+                  <img src="./img/emojis/happy.png" alt="">
+                </div>
+              <span>Good</span>
+            </label>
+            <input id="happy-2" type="radio" name="satisfaction" value="mastercard" />
+            <label class="radio-icon" for="happy-2">
+                <div class="label__wrap">
+                  <img src="./img/emojis/happy-2.png" alt="">
+                </div>
+              <span>Amazing</span>
+            </label>
+        </div>
+      </form>
+  </div>
+</main>
+{% include 'includes/end.html' %} 

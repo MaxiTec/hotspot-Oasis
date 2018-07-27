@@ -1,0 +1,60 @@
+html
+	height:100%
+	position relative
+body
+	position relative
+	min-height: 100%
+	width:100%
+	font-family: $primary-font
+	overflow-x hidden
+a
+	text-decoration: none
+	color:inherit
+	&:hover
+		text-decoration: none
+// h1,h2,h3
+// 	font-family: $secondary-font
+h1
+	text-transform uppercase
+	font-size: 23px
+	line-height: 28px
+h2
+	font-size: 15px
+p
+	// color: #4A4A4A
+	font-size: 13px
+	line-height: 15px
+	text-align: center
+.container-fluid
+	padding-right: 1rem
+	padding-left: 1rem
+	&-md
+		overflow hidden
+		+from-width(5)
+			padding-right: 1rem
+			padding-left: 1rem
+.wrap-container
+	width: 100%
+	margin:0 auto
+	+from-width(48em)
+		// max-width: 720px
+		max-width: 90%
+	//1024 - 1199
+	+from-width(64em)
+		// max-width: 960px
+		max-width: 90%
+		// max-width: 960px
+	//1200px
+	+from-width(75em)
+		max-width: 1170px
+// strong 
+// 	font-weight: 600
+small
+	font-size: 11px
+.clearfix
+	&:before,&:after
+		content: ''
+		display: block
+		clear: both
+.popup-hide
+	display none

@@ -1,0 +1,51 @@
+
+// btn(color, bg, border, bordersize, shadow)
+.btn
+	height: 45px
+	position: relative
+	line-height: 45px
+	padding: 0px 10px
+	cursor pointer
+	font-weight: 500
+	font-size: 30px
+	text-align: center
+	text-transform: uppercase
+	font-size: 11px
+	display: inline-block
+	letter-spacing: 1px
+	transition: 0.2s all ease
+	font-family $primary-font
+	text-transform: uppercase
+	color:#fff
+	&-big
+		padding: 0px 25px
+	&-fixed
+		max-width 250px
+		margin: 0 auto
+	&-lg
+		height 70px
+		line-height: 70px
+		padding-left:30px
+		padding-right:30px
+	+from-width(5)
+		font-size: 13px
+	&.btn-default
+		btn(#fff, #d1d1d1, #d1d1d1, false,false)
+	&.btn-transparent
+		background-color: transparent!important
+		border:2px solid #fff!important
+		&:hover
+			background-color:rgba(#ffffff,30%)!important
+		// btn(#fff, green,yellow, false,false)
+	&.btn-block
+		display block
+		width: 100%
+		+mobile(orientation: landscape)
+			width:auto
+			display inline-block
+	// &-goc
+	// 	btn(#fff, $cancunColor, false, false, false)
+		// box-shadow: 0 7px 10px 0 rgba(0,0,0,0.17);
+		&:hover
+			background darken($cancunColor,20%)
+			color white

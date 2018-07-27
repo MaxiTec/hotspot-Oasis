@@ -1,0 +1,19 @@
+
+btn(color, bg, border, bordersize, shadow)
+	color: color
+	if shadow
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.6)
+	background-color: bg
+	if border
+		if bordersize
+			border: bordersize solid border
+		else
+			border: 1px solid border
+	else
+		border: none
+	&:focus
+		outline: 0px
+	&:hover
+		background-color: darken(bg, 30%)
+	&:active
+		box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1)

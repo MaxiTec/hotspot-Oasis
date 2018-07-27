@@ -1,0 +1,45 @@
+{% include 'includes/head.html' %}
+{%set headerConfig = { 
+  logo:'logo-oasis.svg'
+  } 
+%}
+<main class="main-section default">
+    {% include 'includes/header.html' %}
+  <div class="main-section__wrap">
+      <section class="main-section__inner">
+        <h1 class="title mb-60">How could we make your stay better?</h1>
+        <form action="" class="main-section__inner--form main-section__inner--form--large">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Thanks so much. Anithing we could be doing better?" required></textarea>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Name (if you're a Guest, Reservation Name)" required>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Room (no room, put 'visitor')" required>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email (So we can reply)" required>
+                  </div>
+              </div>
+              <div class="col-xs-12 center-xs">
+                  <div class="form-group mb-40 mt-20">
+                      <input type="submit" class="btn btn-default btn-block btn-fixed mb-20">
+                      <p><a href="#">Want to change your response?</a></p>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </form>
+      </section>
+  </div>
+</main>
+{% include 'includes/end.html' %} 

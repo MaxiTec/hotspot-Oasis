@@ -1,0 +1,30 @@
+{% include 'includes/head.html' %} 
+{%set headerConfig = { 
+  icono: 'true',
+  logo:'oh.svg'
+  } 
+%}
+<main class="main-section oh">
+    {% include 'includes/header.html' %}
+  <div class="main-section__wrap">
+      <section class="main-section__inner">
+        <h1 class="title mb-60">Seleccione un método de inicio de sesión</h1>
+        <div class="methods-box text-center">
+          <div class="method-box methods-box__one">
+              <a href="#" class="btn btn-block">
+                  CARGO A MI TARJETA DE CRÉDITO
+              </a>
+              <p>*Se requiere información de la tarjeta</p>
+          </div>  
+          <div class="method-box methods-box__two">
+              <a href="#" class="btn btn-block">
+                  CÓDIGO DE ACCESO
+              </a>
+              <p>*Disponible en el Lobby (Máquina expendedora)</p>
+          </div>
+        </div>
+      </section>
+  {% include 'includes/footer.html' %} 
+  </div>
+</main>
+{% include 'includes/end.html' %} 

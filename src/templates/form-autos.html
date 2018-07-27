@@ -1,0 +1,171 @@
+{% include 'includes/head.html' %} 
+{%set headerConfig = { 
+  logo:'goc.svg'
+  } 
+%}
+<main class="main-section goc">
+    {% include 'includes/header.html' %}
+  <div class="main-section__wrap goc">
+      <section class="main-section__inner">
+        <h1 class="title mb-60">Alquiler de Autos</h1>
+        <div class="main-section__form">
+            <form id="autos-form" action="#">
+                <div>
+                    <h3>Primer Paso</h3>
+                    <section>
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Nombre" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Apellido" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Email" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Telefono" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                              <div class="select-custom">
+                                <select name="" id="" class="form-control">
+                                  <option value="1" disabled selected>Seleccion de Auto</option>
+                                  <option value="Auto 1">Auto 1</option>
+                                  <option value="Auto 2">Auto 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <div class="select-custom">
+                                    <select name="" id="" class="form-control">
+                                      <option value="1" disabled selected>Lugar de Obtencion</option>
+                                      <option value="Auto 1">Auto 1</option>
+                                      <option value="Auto 2">Auto 2</option>
+                                    </select>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <div class="select-custom">
+                                    <select name="" id="" class="form-control">
+                                      <option value="1" disabled selected>Lugar Devolucion</option>
+                                      <option value="Auto 1">Auto 1</option>
+                                      <option value="Auto 2">Auto 2</option>
+                                    </select>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <div class="select-custom">
+                                    <select name="" id="" class="form-control">
+                                      <option value="1" disabled selected>Fecha de Obtencion</option>
+                                      <option value="Auto 1">Auto 1</option>
+                                      <option value="Auto 2">Auto 2</option>
+                                    </select>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <div class="select-custom">
+                                    <select name="" id="" class="form-control">
+                                      <option value="1" disabled selected>Hora de Obtencion</option>
+                                      <option value="Auto 1">Auto 1</option>
+                                      <option value="Auto 2">Auto 2</option>
+                                    </select>
+                                  </div>
+                            </div>
+                          </div>
+                      </div>
+                    </section>
+                    <h3>Segundo Paso</h3>
+                    <section class="body-stretch">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Nombre" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Visa" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Número de Tarjeta" required>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                              <div class="select-custom">
+                                <select name="" id="" class="form-control">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                              <div class="select-custom">
+                                <select name="" id="" class="form-control">
+                                  <option value="2018">2018</option>
+                                  <option value="2019">2019</option>
+                                  <option value="2020">2020</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="Zip Code">
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="Email">
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="Confirmar Email">
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form-group text-center">
+                                <div class="checkbox-custom mt-10 mb-20">
+                                    <input type="checkbox" id="accept">
+                                    <label for="accept">Acepto <strong><a href="#">términos y condiciones</a></strong></label>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+                    <!-- <h3>Finish</h3>
+                    <section>
+                        <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+                    </section> -->
+                </div>
+            </form>
+        </div>
+       
+      </section>
+  <!-- {% include 'includes/footer.html' %}  -->
+  </div>
+</main>
+{% include 'includes/end.html' %} 
