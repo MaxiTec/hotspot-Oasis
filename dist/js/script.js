@@ -90,3 +90,11 @@ formSpa.children('div').steps({
     alert('Envianr Formulario!')
   }
 })
+
+//agrega clase selected a menu idioma
+$('.lang-box-item').click(function(event) {
+  if(!$(this).hasClass('selected')){
+    $(this).siblings('.selected').removeClass('selected')
+    $(this).addClass('selected')
+  }
+});

@@ -30,12 +30,18 @@
     color:#000000
     .header__path__inner
       background: url('../img/header-oh.png') no-repeat
+    .btn
+      btn(#d1d1d1, #fff, #d1d1d1, false, false)
+      &.selected
+        btn(#fff, #d1d1d1, #d1d1d1, false, false)
   &.gos
     color:$sensColor
     .header__path__inner
       background: url('../img/header-gos.png') no-repeat
     .btn
-      btn(#fff, $sensColor, false, false, false)
+      btn($sensColor, #fff, $sensColor, false, false)
+      &.selected
+        btn(#fff, $sensColor, $sensColor, false, false)
     .alert
       border-color: $sensColor
       color:$sensColor
@@ -46,7 +52,9 @@
     .header__path__inner
       background: url('../img/header-goc.png') no-repeat
     .btn
-      btn(#fff, $cancunColor, false, false, false)
+      btn($cancunColor, #fff, $cancunColor, false, false)
+      &.selected
+        btn(#fff, $cancunColor, $cancunColor, false, false)
     .alert
       border-color: $cancunColor
       color:$cancunColor
@@ -57,7 +65,9 @@
     .header__path__inner
       background: url('../img/header-gop.png') no-repeat
     .btn
-      btn(#fff, $palmColor, false, false, false)
+      btn($palmColor, #fff, $palmColor, false, false)
+      &.selected
+        btn(#fff, $palmColor, $palmColor, false, false)
     .alert
       border-color: $palmColor
       color:$palmColor
@@ -68,7 +78,9 @@
     .header__path__inner
       background: url('../img/header-got.png') no-repeat
     .btn
-      btn(#fff, $tulumColor, false, false, false)
+      btn($tulumColor, #fff, $tulumColor, false, false)
+      &.selected
+        btn(#fff, $tulumColor, $tulumColor, false, false)
     .alert
       border-color: $tulumColor
       color:$tulumColor
@@ -79,7 +91,9 @@
     .header__path__inner
       background: url('../img/header-oh.png') no-repeat
     .btn
-      btn(#fff, #000000, false, false, false)
+      btn(#000000, #fff, #000000, false, false)
+      &.selected
+        btn(#fff, #000000, #000000, false, false)
     .alert
       border-color: #000000
       columns #000000
@@ -158,6 +172,10 @@
         bottom:20px
         left:50%
         transform: translateX(-50%)
+  .lang-box
+    display flex
+    justify-content center
+    
 .main__test
   background: #000000 linear-gradient(228.24deg, rgba(255,255,255,0.37) 0%, rgba(255,255,255,0.04) 100%)
   min-height 100vh
