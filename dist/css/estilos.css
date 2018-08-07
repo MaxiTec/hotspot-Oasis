@@ -507,6 +507,7 @@ small {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
+	border: 0;
 }
 
 .btn-big {
@@ -544,9 +545,37 @@ small {
 	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 }
 
+.btn.btn-reverse {
+	color: #d1d1d1;
+	background-color: #fff;
+	border: 1px solid #d1d1d1;
+	background-color: #d1d1d1 !important;
+	border: 2px solid #d1d1d1 !important;
+	color: #fff !important;
+}
+
+.btn.btn-reverse:focus {
+	outline: 0px;
+}
+
+.btn.btn-reverse:hover {
+	background-color: #b3b3b3;
+}
+
+.btn.btn-reverse:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.btn.btn-reverse:hover {
+	background-color: #929292 !important;
+	border: 2px solid #929292 !important;
+}
+
 .btn.btn-transparent {
 	background-color: transparent !important;
 	border: 2px solid #fff !important;
+	color: #fff !important;
 }
 
 .btn.btn-transparent:hover {
@@ -561,6 +590,11 @@ small {
 .btn:hover {
 	background: #b5161c;
 	color: #fff;
+}
+
+.lang-box-item {
+	width: 74px;
+	margin-top: 20px;
 }
 
 footer {
@@ -1203,7 +1237,6 @@ textarea.form-control {
 
 .title {
 	color: inherit;
-	font-family: Raleway;
 	font-size: 18px;
 	line-height: 21px;
 	text-align: center;
@@ -1852,6 +1885,7 @@ textarea.form-control {
 
 .main-section__inner {
 	padding-top: 190px;
+	width: 100%;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
@@ -1881,6 +1915,44 @@ textarea.form-control {
 	background: url("../img/header-oh.png") no-repeat;
 }
 
+.main-section.default .btn {
+	color: #d1d1d1;
+	background-color: #fff;
+	border: 1px solid #d1d1d1;
+}
+
+.main-section.default .btn:focus {
+	outline: 0px;
+}
+
+.main-section.default .btn:hover {
+	background-color: #b3b3b3;
+}
+
+.main-section.default .btn:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.main-section.default .btn.selected {
+	color: #fff;
+	background-color: #d1d1d1;
+	border: 1px solid #d1d1d1;
+}
+
+.main-section.default .btn.selected:focus {
+	outline: 0px;
+}
+
+.main-section.default .btn.selected:hover {
+	background-color: #929292;
+}
+
+.main-section.default .btn.selected:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
 .main-section.gos {
 	color: #5a4881;
 }
@@ -1890,9 +1962,9 @@ textarea.form-control {
 }
 
 .main-section.gos .btn {
-	color: #fff;
-	background-color: #5a4881;
-	border: none;
+	color: #5a4881;
+	background-color: #fff;
+	border: 1px solid #5a4881;
 }
 
 .main-section.gos .btn:focus {
@@ -1900,10 +1972,29 @@ textarea.form-control {
 }
 
 .main-section.gos .btn:hover {
-	background-color: #3f325a;
+	background-color: #b3b3b3;
 }
 
 .main-section.gos .btn:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.main-section.gos .btn.selected {
+	color: #fff;
+	background-color: #5a4881;
+	border: 1px solid #5a4881;
+}
+
+.main-section.gos .btn.selected:focus {
+	outline: 0px;
+}
+
+.main-section.gos .btn.selected:hover {
+	background-color: #3f325a;
+}
+
+.main-section.gos .btn.selected:active {
 	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 }
@@ -1926,9 +2017,9 @@ textarea.form-control {
 }
 
 .main-section.goc .btn {
-	color: #fff;
-	background-color: #e21b23;
-	border: none;
+	color: #e21b23;
+	background-color: #fff;
+	border: 1px solid #e21b23;
 }
 
 .main-section.goc .btn:focus {
@@ -1936,10 +2027,29 @@ textarea.form-control {
 }
 
 .main-section.goc .btn:hover {
-	background-color: #9e1319;
+	background-color: #b3b3b3;
 }
 
 .main-section.goc .btn:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.main-section.goc .btn.selected {
+	color: #fff;
+	background-color: #e21b23;
+	border: 1px solid #e21b23;
+}
+
+.main-section.goc .btn.selected:focus {
+	outline: 0px;
+}
+
+.main-section.goc .btn.selected:hover {
+	background-color: #9e1319;
+}
+
+.main-section.goc .btn.selected:active {
 	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 }
@@ -1962,9 +2072,9 @@ textarea.form-control {
 }
 
 .main-section.gop .btn {
-	color: #fff;
-	background-color: #df2675;
-	border: none;
+	color: #df2675;
+	background-color: #fff;
+	border: 1px solid #df2675;
 }
 
 .main-section.gop .btn:focus {
@@ -1972,10 +2082,29 @@ textarea.form-control {
 }
 
 .main-section.gop .btn:hover {
-	background-color: #9f1751;
+	background-color: #b3b3b3;
 }
 
 .main-section.gop .btn:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.main-section.gop .btn.selected {
+	color: #fff;
+	background-color: #df2675;
+	border: 1px solid #df2675;
+}
+
+.main-section.gop .btn.selected:focus {
+	outline: 0px;
+}
+
+.main-section.gop .btn.selected:hover {
+	background-color: #9f1751;
+}
+
+.main-section.gop .btn.selected:active {
 	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 }
@@ -1998,9 +2127,9 @@ textarea.form-control {
 }
 
 .main-section.got .btn {
-	color: #fff;
-	background-color: #00b1b0;
-	border: none;
+	color: #00b1b0;
+	background-color: #fff;
+	border: 1px solid #00b1b0;
 }
 
 .main-section.got .btn:focus {
@@ -2008,10 +2137,29 @@ textarea.form-control {
 }
 
 .main-section.got .btn:hover {
-	background-color: #007c7b;
+	background-color: #b3b3b3;
 }
 
 .main-section.got .btn:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.main-section.got .btn.selected {
+	color: #fff;
+	background-color: #00b1b0;
+	border: 1px solid #00b1b0;
+}
+
+.main-section.got .btn.selected:focus {
+	outline: 0px;
+}
+
+.main-section.got .btn.selected:hover {
+	background-color: #007c7b;
+}
+
+.main-section.got .btn.selected:active {
 	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 }
@@ -2034,9 +2182,9 @@ textarea.form-control {
 }
 
 .main-section.oh .btn {
-	color: #fff;
-	background-color: #000;
-	border: none;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
 }
 
 .main-section.oh .btn:focus {
@@ -2044,10 +2192,29 @@ textarea.form-control {
 }
 
 .main-section.oh .btn:hover {
-	background-color: #000;
+	background-color: #b3b3b3;
 }
 
 .main-section.oh .btn:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.main-section.oh .btn.selected {
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+.main-section.oh .btn.selected:focus {
+	outline: 0px;
+}
+
+.main-section.oh .btn.selected:hover {
+	background-color: #000;
+}
+
+.main-section.oh .btn.selected:active {
 	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
 }
@@ -2077,72 +2244,40 @@ textarea.form-control {
 	position: relative;
 	text-align: center;
 	padding-bottom: 65%;
-	-webkit-transition: all 0.35s ease;
-	transition: all 0.35s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 	margin-bottom: 1rem;
+	background-position: top center;
+	background-size: 100% 200%;
+	background-repeat: no-repeat;
 }
 
 .main-section__promociones .promo__item.upgrade {
 	background-image: url("../img/promociones/img/upgrade.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.upgrade:hover {
-	background-image: url("../img/promociones/img/upgrade-gris.jpg");
 }
 
 .main-section__promociones .promo__item.autos {
 	background-image: url("../img/promociones/img/renta-autos.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.autos:hover {
-	background-image: url("../img/promociones/img/renta-autos-gris.jpg");
 }
 
 .main-section__promociones .promo__item.cena {
 	background-image: url("../img/promociones/img/cena-romantica.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.cena:hover {
-	background-image: url("../img/promociones/img/cena-romantica-gris.jpg");
 }
 
 .main-section__promociones .promo__item.blackhole {
 	background-image: url("../img/promociones/img/black-hole.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.blackhole:hover {
-	background-image: url("../img/promociones/img/black-hole-gris.jpg");
 }
 
 .main-section__promociones .promo__item.benazuza {
 	background-image: url("../img/promociones/img/benazuza.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.benazuza:hover {
-	background-image: url("../img/promociones/img/benazuza-gris.jpg");
 }
 
 .main-section__promociones .promo__item.kinha {
 	background-image: url("../img/promociones/img/kin-ha.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.kinha:hover {
-	background-image: url("../img/promociones/img/kin-ha-gris.jpg");
 }
 
 .main-section__promociones .promo__item.sensoria {
 	background-image: url("../img/promociones/img/sensoria.jpg");
-	background-size: cover;
-}
-
-.main-section__promociones .promo__item.sensoria:hover {
-	background-image: url("../img/promociones/img/sensoria-gris.jpg");
 }
 
 .main-section__promociones .promo__item__title {
@@ -2150,10 +2285,10 @@ textarea.form-control {
 	margin-bottom: 20px;
 	color: #fff;
 	font-family: Raleway;
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: 1.2px;
-	line-height: 35px;
+	line-height: 23px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -2165,6 +2300,66 @@ textarea.form-control {
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+.main-section .lang-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.main-section__spa-promo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.main-section__spa-promo__item {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main-section__spa-promo__item p {
+	color: #7373a9;
+	font-family: Muli;
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.main-section__spa-promo__item i {
+	font-style: normal;
+	display: block;
+	font-size: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.84px;
+	line-height: 15px;
+}
+
+.main-section__spa-promo .title-promo {
+	color: #727070;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.24px;
+	line-height: 23px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main-section__spa-promo .title-promo span {
+	font-family: Muli;
+	display: block;
+	text-transform: lowercase;
 }
 
 .main__test {
@@ -2494,6 +2689,30 @@ textarea.form-control {
 	align-items: center;
 }
 
+.main-section__spa-promo {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.main-section__spa-promo__item {
+	padding: 1.5rem 2rem;
+	margin-bottom: 10px;
+	width: 50%;
+	max-width: 50%;
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+}
+
+.main-section__spa-promo__item:nth-child(even) {
+	border-left: 1px solid #535353;
+}
+
 .main__test__overlay {
 	position: absolute;
 	top: 50%;
@@ -2760,11 +2979,6 @@ textarea.form-control {
 
 .main-section__promociones {
 	padding-top: 220px;
-}
-
-.main-section__promociones .promo__item {
-	padding-bottom: 0px;
-	height: 350px;
 }
 
 .main__test__header {
@@ -3276,6 +3490,71 @@ textarea.form-control {
 .main-section__inner {
 	padding-top: 250px;
 	padding-bottom: 50px;
+}
+
+.main-section__promociones .promo__item {
+	padding-bottom: 0px;
+	height: 337px;
+}
+
+.main-section__promociones .promo__item.upgrade:hover {
+	background-position-y: 100%;
+}
+
+.main-section__promociones .promo__item.autos:hover {
+	background-position-y: 100%;
+}
+
+.main-section__promociones .promo__item.cena:hover {
+	background-position-y: 100%;
+}
+
+.main-section__promociones .promo__item.blackhole {
+	background-size: 200% 200%;
+}
+
+.main-section__promociones .promo__item.blackhole:hover {
+	background-position-y: 100%;
+}
+
+.main-section__promociones .promo__item.benazuza {
+	background-size: 200% 200%;
+}
+
+.main-section__promociones .promo__item.benazuza:hover {
+	background-position-y: 100%;
+}
+
+.main-section__promociones .promo__item.kinha:hover {
+	background-position: 0 100%;
+}
+
+.main-section__promociones .promo__item.sensoria:hover {
+	background-position: 0 100%;
+}
+
+.main-section__promociones .promo__item__title {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.main-section__spa-promo__item p {
+	text-align: right;
+	font-size: 60px;
+	letter-spacing: 3.24px;
+	line-height: 75px;
+	display: inline-block;
+}
+
+.main-section__spa-promo__item i {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: right;
+}
+
+.main-section__spa-promo .title-promo {
+	line-height: 36px;
+	font-size: 31px;
 }
 
 }

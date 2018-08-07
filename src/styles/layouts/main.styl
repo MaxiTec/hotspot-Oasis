@@ -1,206 +1,275 @@
 .main-section
-  padding: 2rem 1rem
-  +from-width(5)
-    padding: 2rem 60px
-  position relative
-  &__form
-    max-width 600px
-    margin:0 auto
-  &__inner
-    padding-top:190px
-    padding-left: 1.5rem
-    padding-right: 1.5rem
-    +from-width(6)
-      padding-top: 250px
-      padding-bottom: 50px
-    &--form
-      max-width 350px
-      margin:0 auto
-      &--large
-        max-width: 550px
-    .method-box
-      margin-bottom: 40px
-      +from-width(4)
-        max-width 350px
-        margin:0 auto
-        margin-bottom: 40px
-     .btn
-        margin-bottom: 25px
-  &.default
-    color:#000000
-    .header__path__inner
-      background: url('../img/header-oh.png') no-repeat
-    .btn
-      btn(#d1d1d1, #fff, #d1d1d1, false, false)
-      &.selected
-        btn(#fff, #d1d1d1, #d1d1d1, false, false)
-  &.gos
-    color:$sensColor
-    .header__path__inner
-      background: url('../img/header-gos.png') no-repeat
-    .btn
-      btn($sensColor, #fff, $sensColor, false, false)
-      &.selected
-        btn(#fff, $sensColor, $sensColor, false, false)
-    .alert
-      border-color: $sensColor
-      color:$sensColor
-    .main-section__wrap
-      border-color:$sensColor
-  &.goc
-    color:$cancunColor
-    .header__path__inner
-      background: url('../img/header-goc.png') no-repeat
-    .btn
-      btn($cancunColor, #fff, $cancunColor, false, false)
-      &.selected
-        btn(#fff, $cancunColor, $cancunColor, false, false)
-    .alert
-      border-color: $cancunColor
-      color:$cancunColor
-    .main-section__wrap
-      border-color:$cancunColor
-  &.gop
-    color:$palmColor
-    .header__path__inner
-      background: url('../img/header-gop.png') no-repeat
-    .btn
-      btn($palmColor, #fff, $palmColor, false, false)
-      &.selected
-        btn(#fff, $palmColor, $palmColor, false, false)
-    .alert
-      border-color: $palmColor
-      color:$palmColor
-    .main-section__wrap
-      border-color:$palmColor
-  &.got
-    color:$tulumColor
-    .header__path__inner
-      background: url('../img/header-got.png') no-repeat
-    .btn
-      btn($tulumColor, #fff, $tulumColor, false, false)
-      &.selected
-        btn(#fff, $tulumColor, $tulumColor, false, false)
-    .alert
-      border-color: $tulumColor
-      color:$tulumColor
-    .main-section__wrap
-      border-color:$tulumColor
-  &.oh
-    color:#000000
-    .header__path__inner
-      background: url('../img/header-oh.png') no-repeat
-    .btn
-      btn(#000000, #fff, #000000, false, false)
-      &.selected
-        btn(#fff, #000000, #000000, false, false)
-    .alert
-      border-color: #000000
-      columns #000000
-    .main-section__wrap
-      border-color:#000000
-  &__wrap
-    height 100%
-    min-height calc(100vh - 4rem)
-    border:1px solid #000
-    +from-width(4)
-      display flex
-      justify-content: center
-      align-items: center
-  &__promociones
-    padding-top:160px
-    +from-width(5)
-      padding-top: 220px
-    .promo__item
-      position relative
-      text-align: center
-      padding-bottom: 65%
-      transition: all .35s ease
-      margin-bottom: 1rem
-      +from-width(5)
-        padding-bottom: 0px
-        height 350px
-      &.upgrade
-        background-image: url('../img/promociones/img/upgrade.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/upgrade-gris.jpg')
-      &.autos
-        background-image: url('../img/promociones/img/renta-autos.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/renta-autos-gris.jpg')
-      &.cena
-        background-image: url('../img/promociones/img/cena-romantica.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/cena-romantica-gris.jpg')
-      &.blackhole
-        background-image: url('../img/promociones/img/black-hole.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/black-hole-gris.jpg')
-      &.benazuza
-        background-image: url('../img/promociones/img/benazuza.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/benazuza-gris.jpg')
-      &.kinha
-        background-image: url('../img/promociones/img/kin-ha.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/kin-ha-gris.jpg')
-      &.sensoria
-        background-image: url('../img/promociones/img/sensoria.jpg')
-        background-size:cover
-        &:hover
-          background-image: url('../img/promociones/img/sensoria-gris.jpg')
-      &__title
-        display block
-        margin-bottom: 20px
-        color #FFFFFF
-        font-family Raleway
-        font-size 30px
-        font-weight bold
-        letter-spacing 1.2px
-        line-height 35px
-        text-align center
-        text-transform: uppercase
-      &__overlay
-        position absolute
-        width: 100%
-        bottom:20px
-        left:50%
-        transform: translateX(-50%)
-  .lang-box
-    display flex
-    justify-content center
-    
+	padding: 2rem 1rem
+	+from-width(5)
+		padding: 2rem 60px
+	position relative
+	&__form
+		max-width 600px
+		margin:0 auto
+	&__inner
+		padding-top:190px
+		width: 100%
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+		+from-width(6)
+			padding-top: 250px
+			padding-bottom: 50px
+		&--form
+			max-width 350px
+			margin:0 auto
+			&--large
+				max-width: 550px
+		.method-box
+			margin-bottom: 40px
+			+from-width(4)
+				max-width 350px
+				margin:0 auto
+				margin-bottom: 40px
+		 .btn
+				margin-bottom: 25px
+	&.default
+		color:#000000
+		.header__path__inner
+			background: url('../img/header-oh.png') no-repeat
+		.btn
+			btn(#d1d1d1, #fff, #d1d1d1, false, false)
+			&.selected
+				btn(#fff, #d1d1d1, #d1d1d1, false, false)
+	&.gos
+		color:$sensColor
+		.header__path__inner
+			background: url('../img/header-gos.png') no-repeat
+		.btn
+			btn($sensColor, #fff, $sensColor, false, false)
+			&.selected
+				btn(#fff, $sensColor, $sensColor, false, false)
+		.alert
+			border-color: $sensColor
+			color:$sensColor
+		.main-section__wrap
+			border-color:$sensColor
+	&.goc
+		color:$cancunColor
+		.header__path__inner
+			background: url('../img/header-goc.png') no-repeat
+		.btn
+			btn($cancunColor, #fff, $cancunColor, false, false)
+			&.selected
+				btn(#fff, $cancunColor, $cancunColor, false, false)
+		.alert
+			border-color: $cancunColor
+			color:$cancunColor
+		.main-section__wrap
+			border-color:$cancunColor
+	&.gop
+		color:$palmColor
+		.header__path__inner
+			background: url('../img/header-gop.png') no-repeat
+		.btn
+			btn($palmColor, #fff, $palmColor, false, false)
+			&.selected
+				btn(#fff, $palmColor, $palmColor, false, false)
+		.alert
+			border-color: $palmColor
+			color:$palmColor
+		.main-section__wrap
+			border-color:$palmColor
+	&.got
+		color:$tulumColor
+		.header__path__inner
+			background: url('../img/header-got.png') no-repeat
+		.btn
+			btn($tulumColor, #fff, $tulumColor, false, false)
+			&.selected
+				btn(#fff, $tulumColor, $tulumColor, false, false)
+		.alert
+			border-color: $tulumColor
+			color:$tulumColor
+		.main-section__wrap
+			border-color:$tulumColor
+	&.oh
+		color:#000000
+		.header__path__inner
+			background: url('../img/header-oh.png') no-repeat
+		.btn
+			btn(#000000, #fff, #000000, false, false)
+			&.selected
+				btn(#fff, #000000, #000000, false, false)
+		.alert
+			border-color: #000000
+			columns #000000
+		.main-section__wrap
+			border-color:#000000
+	&__wrap
+		height 100%
+		min-height calc(100vh - 4rem)
+		border:1px solid #000
+		+from-width(4)
+			display flex
+			justify-content: center
+			align-items: center
+	&__promociones
+		padding-top:160px
+		+from-width(5)
+			padding-top: 220px
+		.promo__item
+			position relative
+			text-align: center
+			padding-bottom: 65%
+			transition: all .30s ease
+			margin-bottom: 1rem
+			background-position:top center
+			background-size: 100% 200%;
+			background-repeat: no-repeat
+			+from-width(6)
+				padding-bottom: 0px
+				height 337px
+			&.upgrade
+				background-image: url('../img/promociones/img/upgrade.jpg')
+				+from-width(6)
+					&:hover
+						background-position-y:100%
+			&.autos
+				background-image: url('../img/promociones/img/renta-autos.jpg')
+				+from-width(6)
+					&:hover
+						background-position-y:100%
+			&.cena
+				background-image: url('../img/promociones/img/cena-romantica.jpg')
+				+from-width(6)
+					&:hover
+						background-position-y:100%
+			&.blackhole
+				background-image: url('../img/promociones/img/black-hole.jpg')
+				+from-width(6)
+					background-size: 200% 200%;
+					&:hover
+						background-position-y:100%
+			&.benazuza
+				background-image: url('../img/promociones/img/benazuza.jpg')
+				+from-width(6)
+					background-size: 200% 200%;
+					&:hover
+						background-position-y:100%
+			&.kinha
+				background-image: url('../img/promociones/img/kin-ha.jpg')
+				+from-width(6)
+					&:hover
+						background-position:0 100%
+			&.sensoria
+				background-image: url('../img/promociones/img/sensoria.jpg')
+				+from-width(6)
+					&:hover
+						background-position:0 100%
+			&__title
+				display block
+				margin-bottom: 20px
+				color #FFFFFF
+				font-family Raleway
+				font-size 22px
+				font-weight bold
+				letter-spacing 1.2px
+				line-height 23px
+				text-align center
+				text-transform: uppercase
+				+from-width(6)
+					font-size: 30px
+					line-height 35px
+			&__overlay
+				position absolute
+				width: 100%
+				bottom:20px
+				left:50%
+				transform: translateX(-50%)
+	.lang-box
+		display flex
+		justify-content center
+	&__spa-promo
+		display flex
+		flex-direction: column
+		+from-width(4)
+			flex-direction: row
+			// justify-content: center
+			flex-wrap: wrap
+			box-sizing: border-box
+		&__item
+			text-align: center
+			margin-bottom: 20px
+			+from-width(4)
+				padding: 1.5rem 2rem
+				margin-bottom: 10px
+				width: 50%
+				max-width 50%
+				flex-basis: 50%
+				&:nth-child(even)
+					border-left: 1px solid #535353;
+			p
+				color: #7373A9
+				font-family: Muli;
+				font-size: 34px;
+				font-weight: bold;
+				letter-spacing: 1.2px;
+				line-height: 30px;
+				text-align: center
+				+from-width(6)
+					text-align: right 
+					font-size: 60px;
+					letter-spacing: 3.24px;
+					line-height: 75px;
+					display inline-block
+			i
+				font-style: normal
+				display block
+				font-size: 10px
+				font-size: 14px;
+				font-weight: bold;
+				letter-spacing: 0.84px;
+				line-height: 15px;
+				+from-width(6)
+					font-size: 21px;
+					line-height: 26px;
+					text-align: right
+		.title-promo
+			color: #727070;
+			font-size: 18px;
+			font-weight: bold;
+			letter-spacing: 1.24px;
+			line-height: 23px;
+			text-align: center
+			text-transform: uppercase
+			+from-width(6)
+				line-height: 36px
+				font-size: 31px
+			span
+				font-family: Muli
+				display block
+				text-transform: lowercase
 .main__test
-  background: #000000 linear-gradient(228.24deg, rgba(255,255,255,0.37) 0%, rgba(255,255,255,0.04) 100%)
-  min-height 100vh
-  &__overlay
-    padding-bottom: 3rem
-    +mobile(orientation: portrait)
-      position absolute
-      top:50%
-      left:50%
-      width:100%
-      transform: translate(-50%,-50%)
-      padding: 0
-    +from-width(4)
-      position absolute
-      top:50%
-      left:50%
-      width:100%
-      transform: translate(-50%,-50%)
-      padding-top: 7rem
-  &__header
-    text-align: center
-    padding:3rem  1rem
-    +from-width(5)
-      padding:4rem  1rem
-    img
-      max-width 150px
-      display block
-      margin: 0 auto
+	background: #000000 linear-gradient(228.24deg, rgba(255,255,255,0.37) 0%, rgba(255,255,255,0.04) 100%)
+	min-height 100vh
+	&__overlay
+		padding-bottom: 3rem
+		+mobile(orientation: portrait)
+			position absolute
+			top:50%
+			left:50%
+			width:100%
+			transform: translate(-50%,-50%)
+			padding: 0
+		+from-width(4)
+			position absolute
+			top:50%
+			left:50%
+			width:100%
+			transform: translate(-50%,-50%)
+			padding-top: 7rem
+	&__header
+		text-align: center
+		padding:3rem  1rem
+		+from-width(5)
+			padding:4rem  1rem
+		img
+			max-width 150px
+			display block
+			margin: 0 auto
+	
