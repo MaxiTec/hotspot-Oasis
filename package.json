@@ -4,7 +4,7 @@
   "description": "Landing Pages para HotSpots de Hoteles",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "export NODE_ENV=production && gulp prod",
+    "build": "export NODE_ENV=production&&gulp prod",
     "dev": "export NODE_ENV=development && gulp"
   },
   "author": "MaxTec",

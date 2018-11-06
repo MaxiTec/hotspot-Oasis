@@ -197,12 +197,12 @@
 			margin-bottom: 20px
 			+from-width(4)
 				padding: 1.5rem 2rem
-				margin-bottom: 10px
+				margin-bottom: 0px
 				width: 50%
 				max-width 50%
 				flex-basis: 50%
 				&:nth-child(even)
-					border-left: 1px solid #535353;
+					border-lefy: 1px solid #535353;
 			p
 				color: #7373A9
 				font-family: Muli;
@@ -216,7 +216,6 @@
 					font-size: 60px;
 					letter-spacing: 3.24px;
 					line-height: 75px;
-					display inline-block
 			i
 				font-style: normal
 				display block
@@ -247,8 +246,17 @@
 .main__test
 	background: #000000 linear-gradient(228.24deg, rgba(255,255,255,0.37) 0%, rgba(255,255,255,0.04) 100%)
 	min-height 100vh
+	&__bottom
+		position absolute
+		bottom:10px
+		left:50%
+		transform: translateX(-50%)
+		+mobile(orientation: portrait)
+			bottom: 40px
+		+from-width(4)
+			bottom:8%
 	&__overlay
-		padding-bottom: 3rem
+		padding-bottom: 5rem
 		+mobile(orientation: portrait)
 			position absolute
 			top:50%
@@ -256,6 +264,7 @@
 			width:100%
 			transform: translate(-50%,-50%)
 			padding: 0
+			// padding-bottom: 2rem
 		+from-width(4)
 			position absolute
 			top:50%

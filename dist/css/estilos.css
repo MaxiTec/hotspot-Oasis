@@ -526,6 +526,43 @@ small {
 	padding-right: 30px;
 }
 
+.btn-xs {
+	height: 30px;
+	min-width: 100px;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.37);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.37);
+	border-width: 2px !important;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.btn.btn-rounded {
+	border-radius: 35px;
+	color: #fff;
+	background-color: rgba(255,255,255,0.38);
+	border: 1px solid #fff;
+}
+
+.btn.btn-rounded:focus {
+	outline: 0px;
+}
+
+.btn.btn-rounded:hover {
+	background-color: rgba(179,179,179,0.38);
+}
+
+.btn.btn-rounded:active {
+	-webkit-box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.btn.btn-rounded--lg {
+	min-width: 200px;
+	border-width: 3px;
+	line-height: 35px;
+	font-size: 20px;
+}
+
 .btn.btn-default {
 	color: #fff;
 	background-color: #d1d1d1;
@@ -2367,8 +2404,16 @@ textarea.form-control {
 	min-height: 100vh;
 }
 
+.main__test__bottom {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
 .main__test__overlay {
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
 }
 
 .main__test__header {
@@ -2702,7 +2747,7 @@ textarea.form-control {
 
 .main-section__spa-promo__item {
 	padding: 1.5rem 2rem;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	width: 50%;
 	max-width: 50%;
 	-ms-flex-preferred-size: 50%;
@@ -2710,7 +2755,11 @@ textarea.form-control {
 }
 
 .main-section__spa-promo__item:nth-child(even) {
-	border-left: 1px solid #535353;
+	border-lefy: 1px solid #535353;
+}
+
+.main__test__bottom {
+	bottom: 8%;
 }
 
 .main__test__overlay {
@@ -2734,6 +2783,16 @@ textarea.form-control {
 
 .btn {
 	font-size: 13px;
+}
+
+.btn.btn-rounded--lg {
+	text-align: center;
+	-webkit-box-shadow: 0 2px 14px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,0.5);
+	border-width: 5px;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 32px;
 }
 
 .wizard > .content >.body-stretch {
@@ -3543,7 +3602,6 @@ textarea.form-control {
 	font-size: 60px;
 	letter-spacing: 3.24px;
 	line-height: 75px;
-	display: inline-block;
 }
 
 .main-section__spa-promo__item i {
@@ -3595,6 +3653,10 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 25em) and (orientation: portrait) {
+
+.main__test__bottom {
+	bottom: 40px;
+}
 
 .main__test__overlay {
 	position: absolute;

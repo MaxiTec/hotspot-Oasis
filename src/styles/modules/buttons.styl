@@ -30,6 +30,28 @@
 		padding-right:30px
 	+from-width(5)
 		font-size: 13px
+	&-xs
+		height 30px
+		min-width: 100px
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.37)
+		border-width: 2px!important
+		font-size: 16px
+		line-height: 24px;
+	&.btn-rounded
+		border-radius: 35px
+		btn(#fff,rgba(255,255,255,0.38),white,false,false)
+		&--lg
+			min-width: 200px
+			border-width: 3px
+			line-height: 35px
+			font-size: 20px;
+			+from-width(5)
+				text-align: center
+				box-shadow: 0 2px 14px 0 rgba(0,0,0,0.5);
+				border-width: 5px
+				font-weight: 300
+				font-size: 26px;
+				line-height: 32px;
 	&.btn-default
 		btn(#fff, #d1d1d1, #d1d1d1, false,false)
 	&.btn-reverse
